@@ -22,11 +22,40 @@ body {
     flex-direction: column;
 }
 
+.screen-container {
+    display: flex;
+}
+
 .screen {
     background-color: #6b876d;
     height: 120px;
+    width: 350px;
     margin: 25px;
-    border: 1px solid black;
+    border: 0px solid black;
     border-radius: 15px;
 }
 
+.info {
+    height: 120px;
+    width: 200px;
+    margin: 25px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    font-size: 20px;
+    color: #e6e6e6;
+}
+
+.author {
+    font-size: 15px;
+    color: #e36d94;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
