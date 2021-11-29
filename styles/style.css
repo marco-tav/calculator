@@ -13,8 +13,8 @@ body {
 }
 
 .calculator-body {
-    height: 700px;
-    width: 550px;
+    height: 650px;
+    width: 650px;
     background-color: #283554;
     border: 0px solid black;
     border-radius: 30px;
@@ -29,7 +29,7 @@ body {
 .screen {
     background-color: #6b876d;
     height: 120px;
-    width: 350px;
+    width: 450px;
     margin: 25px;
     border: 0px solid black;
     border-radius: 15px;
@@ -46,16 +46,33 @@ body {
 }
 
 .title {
-    font-size: 20px;
+    font-size: 30px;
     color: #e6e6e6;
 }
 
 .author {
     font-size: 15px;
     color: #e36d94;
+    margin-top: auto;
 }
 
 .button-container {
     display: flex;
     flex-direction: column;
+    margin: 25px;
+    margin-top: 0px;
+    width: 600px;
+    height: 530px;
+}
+
+.button-row {
+    display: flex;
+    height: 110px;
+}
+
+.button {
+    background-color: #e6e6e6;
+    width: 100px;
+    height: 100px;
+    flex: 1 1 auto;
 }
