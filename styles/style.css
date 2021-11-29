@@ -14,8 +14,19 @@ body {
 
 .calculator-body {
     height: 700px;
-    width: 450px;
-    background-color: #3b4d7a;
-    border: 1px solid black;
+    width: 550px;
+    background-color: #283554;
+    border: 0px solid black;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
 }
+
+.screen {
+    background-color: #6b876d;
+    height: 120px;
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
