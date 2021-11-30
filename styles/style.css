@@ -16,7 +16,7 @@ body {
     background-color: #cccbc4;
     height: 100vh;
     font-family: "Orbitron";
-}
+}   
 
 .calculator-body {
     height: 500px;
@@ -69,6 +69,7 @@ body {
     height: 330px;
     padding: 8px;
     padding-top: 0px;
+    margin-bottom: 10px;
 }
 
 .button-row {
@@ -95,10 +96,28 @@ body {
     font-family: "Orbitron";
 }
 
+.button:hover {
+    background-color: #dbdbdb;
+}
+
+.button:active {
+    background-color: #cfcfcf;
+}
+
 #del,
 #ac {
     background-color: #4256db;
     color: white;
+}
+
+#del:hover,
+#ac:hover {
+    background-color: #3c4fc9;
+}
+
+#del:active,
+#ac:active {
+    background-color: #394ab8;
 }
 
 #equal {
