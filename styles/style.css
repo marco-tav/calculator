@@ -13,7 +13,7 @@ body {
 }
 
 .calculator-body {
-    height: 650px;
+    height: 500px;
     width: 650px;
     background-color: #283554;
     border: 0px solid black;
@@ -59,20 +59,37 @@ body {
 .button-container {
     display: flex;
     flex-direction: column;
-    margin: 25px;
-    margin-top: 0px;
-    width: 600px;
-    height: 530px;
+    width: 650px;
+    height: 330px;
+    padding: 8px;
+    padding-top: 0px;
 }
 
 .button-row {
     display: flex;
-    height: 110px;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 1 auto;
+}
+
+.button-div {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
+    width: 90px;
+    height: 50px;
     background-color: #e6e6e6;
-    width: 100px;
-    height: 100px;
-    flex: 1 1 auto;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#del,
+#ac {
+    background-color: #4256db;
+    color: white;
 }
