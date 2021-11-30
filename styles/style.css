@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +15,7 @@ body {
     align-items: center;
     background-color: #cccbc4;
     height: 100vh;
+    font-family: "Orbitron";
 }
 
 .calculator-body {
@@ -86,6 +92,7 @@ body {
     border: 0;
     border-radius: 5px;
     font-size: 18px;
+    font-family: "Orbitron";
 }
 
 #del,
