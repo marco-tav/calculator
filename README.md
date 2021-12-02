@@ -8,4 +8,4 @@ To run this project just download the repository and run ```index.html``` on any
 
 ## Status
 
-Just started. Everything is yet to be done.
+Preliminary design is finished and number buttons print to the calculator's screen. The rest of the functionality is still to be done.
