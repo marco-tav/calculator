@@ -8,4 +8,4 @@ To run this project just download the repository and run ```index.html``` on any
 
 ## Status
 
-Preliminary design is finished, number buttons print to the calculator's screen and also append their value to a variable when clicked. The rest of the functionality is still to be done.
+Preliminary design is finished. The calculator will perform only one calcultation for now. The rest of the functionality is still to be done.
