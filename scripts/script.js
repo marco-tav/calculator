@@ -57,6 +57,7 @@ const screen = document.querySelector('#numbers');
 const displayBtns = document.querySelectorAll('.display');
 const operatorBtns = document.querySelectorAll('.operator');
 const equalBtn = document.querySelector('#equal');
+const clearBtn = document.querySelector('#ac');
 
 displayBtns.forEach((button) => {
     button.addEventListener('click', () => {
@@ -80,6 +81,14 @@ equalBtn.addEventListener('click', () => {
     screen.textContent = result;
     num1 = result;
     calculation = result;
+    num2 = '';
+    operator = '';
+})
+
+clearBtn.addEventListener('click', () => {
+    screen.textContent = '';
+    calculation = '';
+    num1 = '';
     num2 = '';
     operator = '';
 })

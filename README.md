@@ -8,4 +8,4 @@ To run this project just download the repository and run ```index.html``` on any
 
 ## Status
 
-Preliminary design is finished. The calculator will perform operations with the result of a previous operation. The rest of the functionality is still to be done.
+Preliminary design is finished. The calculator will perform operations with the result of a previous operation and the 'clear screen' button works. Still to be done: calculator still allows multiple operators and it shouldn't. DEL, dot, and +/- still not working.
