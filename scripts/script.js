@@ -24,7 +24,7 @@ function operate(num1, num2, operator) {
         return subtract(num1, num2);
     } else if (operator === 'x') {
         return multiply(num1, num2);
-    } else if (operator === '÷') {
+    } else if (operator === '/') {
         return divide(num1, num2);
     };
 }
@@ -47,9 +47,16 @@ function printToScreen(screen, button) {
 //----------------------------------------------------------
 
 let calculation = '';
+let num1 = '';
+let num2 = '';
+let operator = '';
+let result = '';
+
 const screen = document.querySelector('#numbers');
 
 const displayBtns = document.querySelectorAll('.display');
+const operatorBtns = document.querySelectorAll('.operator');
+const equalBtn = document.querySelector('#equal');
 
 displayBtns.forEach((button) => {
     button.addEventListener('click', () => {
@@ -58,3 +65,17 @@ displayBtns.forEach((button) => {
     })
 });
 
+operatorBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+        buttonToScreen(screen, button);
+        operator = button.textContent;
+        num1 = calculation;
+        calculation = '';
+    })
+})
+
+equalBtn.addEventListener('click', () => {
+    num2 = calculation; 
+    result = operate(+num1, +num2, operator);
+    screen.textContent = result;
+})
