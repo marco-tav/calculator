@@ -76,6 +76,10 @@ operatorBtns.forEach((button) => {
 
 equalBtn.addEventListener('click', () => {
     num2 = calculation; 
-    result = operate(+num1, +num2, operator);
+    result = operate(Number(num1), Number(num2), operator);
     screen.textContent = result;
+    num1 = result;
+    calculation = result;
+    num2 = '';
+    operator = '';
 })
