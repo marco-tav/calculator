@@ -33,6 +33,10 @@ function buttonToScreen(screen, button) {
     screen.textContent += button.textContent;
 }
 
+function storeCalculation(variable, button) {
+    variable += button.textContent;
+}
+
 function printToScreen(screen, button) {
     button.addEventListener('click', () => {
         buttonToScreen(screen, button);
@@ -42,6 +46,7 @@ function printToScreen(screen, button) {
 //------------------------EXECUTION-------------------------
 //----------------------------------------------------------
 
+let calculation = '';
 const screen = document.querySelector('#numbers');
 const zero = document.querySelector('#zero');
 const one = document.querySelector('#one');
@@ -54,13 +59,53 @@ const seven = document.querySelector('#seven');
 const eight = document.querySelector('#eight');
 const nine = document.querySelector('#nine');
 
-printToScreen(screen, zero);
-printToScreen(screen, one);
-printToScreen(screen, two);
-printToScreen(screen, three);
-printToScreen(screen, four);
-printToScreen(screen, five);
-printToScreen(screen, six);
-printToScreen(screen, seven);
-printToScreen(screen, eight);
-printToScreen(screen, nine);
+zero.addEventListener('click', () => {
+    buttonToScreen(screen, zero);
+    calculation += zero.textContent;
+})
+
+one.addEventListener('click', () => {
+    buttonToScreen(screen, one);
+    calculation += one.textContent;
+})
+
+two.addEventListener('click', () => {
+    buttonToScreen(screen, two);
+    calculation += two.textContent;
+})
+
+three.addEventListener('click', () => {
+    buttonToScreen(screen, three);
+    calculation += three.textContent;
+})
+
+four.addEventListener('click', () => {
+    buttonToScreen(screen, four);
+    calculation += four.textContent;
+})
+
+five.addEventListener('click', () => {
+    buttonToScreen(screen, five);
+    calculation += five.textContent;
+})
+
+six.addEventListener('click', () => {
+    buttonToScreen(screen, six);
+    calculation += six.textContent;
+})
+
+seven.addEventListener('click', () => {
+    buttonToScreen(screen, seven);
+    calculation += seven.textContent;
+})
+
+eight.addEventListener('click', () => {
+    buttonToScreen(screen, eight);
+    calculation += eight.textContent;
+})
+
+nine.addEventListener('click', () => {
+    buttonToScreen(screen, nine);
+    calculation  += nine.textContent;
+})
+
