@@ -33,7 +33,7 @@ function buttonToScreen(screen, button) {
     screen.textContent += button.textContent;
 }
 
-function storeCalculation(variable, button) {
+function storeCalculation(button, variable) {
     variable += button.textContent;
 }
 
@@ -56,13 +56,13 @@ const screen = document.querySelector('#numbers');
 
 const displayBtns = document.querySelectorAll('.display');
 const operatorBtns = document.querySelectorAll('.operator');
-const equalBtn = document.querySelector('#equal');
-const clearBtn = document.querySelector('#ac');
+const equalBtn = document.getElementById('equal');
+const clearBtn = document.getElementById('ac');
 
-displayBtns.forEach((button) => {
-    button.addEventListener('click', () => {
-        buttonToScreen(screen, button);
-        calculation += button.textContent;
+displayBtns.forEach((displayBtn) => {
+    displayBtn.addEventListener('click', () => {
+        buttonToScreen(screen, displayBtn);
+        calculation += displayBtn.textContent;
     })
 });
 
