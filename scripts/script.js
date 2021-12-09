@@ -35,6 +35,7 @@ function buttonToScreen(screen, button) {
 
 function storeCalculation(button, variable) {
     variable += button.textContent;
+    return variable;
 }
 
 function printToScreen(screen, button) {
@@ -45,7 +46,6 @@ function printToScreen(screen, button) {
 
 //------------------------EXECUTION-------------------------
 //----------------------------------------------------------
-
 let calculation = '';
 let num1 = '';
 let num2 = '';
@@ -62,7 +62,8 @@ const clearBtn = document.getElementById('ac');
 displayBtns.forEach((displayBtn) => {
     displayBtn.addEventListener('click', () => {
         buttonToScreen(screen, displayBtn);
-        calculation += displayBtn.textContent;
+        calculation = storeCalculation(displayBtn, calculation);
+        console.log(calculation);
     })
 });
 
@@ -78,6 +79,7 @@ operatorBtns.forEach((button) => {
 equalBtn.addEventListener('click', () => {
     num2 = calculation; 
     result = operate(Number(num1), Number(num2), operator);
+    result = +result.toFixed(2);
     screen.textContent = result;
     num1 = result;
     calculation = result;
