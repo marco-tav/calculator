@@ -49,8 +49,11 @@ body {
 #numbers {
     font-family: "DSEG14 Classic";
     font-size: 25px;
+    width: 398px;
     padding-left: 8px;
+    padding-right: 8px;
     padding-top: 10px;
+    overflow-wrap: break-word;
 }
 
 .info {
