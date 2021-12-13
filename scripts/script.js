@@ -54,23 +54,24 @@ let result = '';
 
 const screen = document.querySelector('#numbers');
 
-const displayBtns = document.querySelectorAll('.display');
+const numberBtns = document.querySelectorAll('.display');
 const operatorBtns = document.querySelectorAll('.operator');
 const equalBtn = document.getElementById('equal');
 const clearBtn = document.getElementById('ac');
+const dotBtn = document.getElementById('dot');
 
-displayBtns.forEach((displayBtn) => {
-    displayBtn.addEventListener('click', () => {
-        buttonToScreen(screen, displayBtn);
-        calculation = storeCalculation(displayBtn, calculation);
+numberBtns.forEach((numberBtn) => {
+    numberBtn.addEventListener('click', () => {
+        buttonToScreen(screen, numberBtn);
+        calculation = storeCalculation(numberBtn, calculation);
         console.log(calculation);
     })
 });
 
-operatorBtns.forEach((button) => {
-    button.addEventListener('click', () => {
-        buttonToScreen(screen, button);
-        operator = button.textContent;
+operatorBtns.forEach((operatorBtn) => {
+    operatorBtn.addEventListener('click', () => {
+        buttonToScreen(screen, operatorBtn);
+        operator = operatorBtn.textContent;
         num1 = calculation;
         calculation = '';
     })
@@ -93,4 +94,9 @@ clearBtn.addEventListener('click', () => {
     num1 = '';
     num2 = '';
     operator = '';
+})
+
+dotBtn.addEventListener('click', () => {
+    buttonToScreen(screen, dotBtn);
+    calculation = storeCalculation(dotBtn, calculation);
 })
