@@ -1,0 +1,9 @@
+{   
+    "[git-commit]": {"editor.rulers": [50, 72]},
+    "[javascript]": {"editor.rulers": [80]},
+    "[css]": {"editor.rulers": [80]},
+    "[html]": {"editor.rulers": [80]},
+    "editor.rulers": [
+    
+    ]
+}
